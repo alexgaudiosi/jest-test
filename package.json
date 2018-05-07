@@ -2,6 +2,12 @@
   "name": "loc",
   "version": "0.1.0",
   "private": true,
+  "jest": {
+    "testEnvironment": "enzyme",
+    "testEnvironmentOptions": {
+      "enzymeAdapter": "react16"
+    }
+  },
   "dependencies": {
     "npm": "^6.0.0",
     "react": "^16.3.2",
@@ -19,10 +25,15 @@
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.46",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.46",
+    "@babel/preset-env": "^7.0.0-beta.46",
+    "@babel/preset-react": "^7.0.0-beta.3",
     "babel-core": "^7.0.0-0",
+    "babel-jest": "^22.4.3",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "jest": "^22.4.3",
-    "jest-enzyme": "^6.0.0"
+    "jest-enzyme": "^6.0.0",
+    "regenerator-runtime": "^0.11.1"
   }
 }
